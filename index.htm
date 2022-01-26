@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"> 
+	<head>
+		<meta charset="utf-8" />
+		<meta name="Slime Home" content="Reincarnated as slime">
+		<title>Slime Homepage </title>
+		<script src="modernizr.custom.05819.js"></script>
+		
+	</head>
+	
+	<body style="text-align:center">
+	<img src="Slime logo.png" alt = "logo" style="float:right;width:250px;height:250px;">
+	<!-- Place holder for image of logo -->
+		<nav>
+			<ul style="list-style-type:none;" >
+				<li>
+					<a href ="index.htm#anchor">Home</a>
+				</li>
+				<li>
+					<a href ="Rimuru.htm#anchor">Rimuru</a>
+				</li>
+				<li>
+					<a href ="Ogre Mages.htm#anchor">Ogre Mages</a>
+				</li>
+				<li>
+					<a href ="Dire wolves and Goblins.htm#anchor">Goblins and Direwolves</a>
+				</li>
+			</ul>
+		</nav>
+	<img src="Rimuru.png""Rimuru_Slime_Anime.png" class="center">
+	
+	<p>
+		Reincarnated as slime is anime about man who died when he was stabbed
+		on the street. Immediatly after he is reincartned into another world
+		but born as a slime. Known as one of the weakest monsters in any world
+		Rimuru strives to create a town where monsters and humans can live together
+		in harmony ..... but hits a few bumps along the way.
+	</p>
+	
+	 <article>
+      <h2>Add Population</h2>
+      <form>
+         <input type="checkbox" id="item1" value="200" />
+         <label for="item1"> Goblins (200 population)</label>
+         <input type="checkbox" id="item2" value="400" />
+         <label for="item2"> Direwolves (400 population)</label>
+         <input type="checkbox" id="item3" value="6" />
+         <label for="item3"> Ogre Mages (6 population)</label>
+         <input type="submit" id="submit" value="Submit" />
+      </form>
+	</article>
+<script> 
+function calcTotal() {
+ 	var popTotal = 0;
+ 	var item1 = document.getElementById("item1");
+ 	var item2 = document.getElementById("item2");
+ 	var item3 = document.getElementById("item3");
+
+ 	(item1.checked) ? (popTotal += 200) : (popTotal += 0);
+ 	(item2.checked) ? (popTotal += 400) : (popTotal += 0);
+	(item3.checked) ? (popTotal += 6) : (popTotal += 0);
+	var Total = popTotal
+ 	alert("Total Population : " +Total);
+}
+document.getElementById("submit").addEventListener("click", calcTotal, false);
+
+</script>
+	
+	
+	
+	</body>
+
+
+</html>
