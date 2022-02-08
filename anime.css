@@ -7,6 +7,7 @@ h1		{text-align: center;
 		
 		}
 body	{margin-left: auto;
+		background-image: url("https://animesolution.com/wp-content/uploads/2019/02/Tensei-Shitara-Slime-Datta-Ken-18_02.25_2019.02.04_13.16.47_stitch.jpg");
 		background-color: #00539CFF;
 		font-size: 10px 10px 10px;
 		color:#00539CFF; 
@@ -14,26 +15,47 @@ body	{margin-left: auto;
 		}
 h2		{color: #ffffff;
 		background-color: #CC0000;
-		text-align: left;
+		text-align: center;
 		height: 20%;
 		padding-bottom: 1%;
+		margin-left: 20%;
 		margin-right: 20%;
 		}
-li		{text-align:center;
-		color:#00539CFF;
+ul 		{
+		list-style-type: none;
+		width: 100%;
+		
+		overflow: hidden; 
+		top: 0;
+		background-color: #333
 		}
-nav		{margin-left: 15%;
-		margin-right: 15%;
+li		{
+		float: left; 
+		border-right: 1px solid #bbb;
 		}
-p 		{text-align: center;
+li a	{display: block;
+		color:white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		}
+li a:hover{
+		background-color:#555;
+		color: white;
+		
+		}
+
+p 		{text-align: right;
+		height: 90%;
+		font-size: 30px;
 		margin-left: 10%;
 		margin-right: 10%;
-		border: 2px dashed gold;
+		border: 24px dashed gold;
 		background-color: gold;
-		box-shadow: 2px 3px #000000;
+		box-shadow: 5px 6px #000000;
 		}
 div		{
-		margin-left: 10%;
+		margin-left: 5%;
 		margin-right: 10%;
 		color: ##00539CFF;
 		}
@@ -43,4 +65,20 @@ div		{
 		box-shadow: 5px 10px #000000;
 		}
 
-#
+form	{text-align: center;
+		color: #000000;
+		box-shadow: 2px 3px #000000;
+		background-color: #14FCEE;
+		margin-left: 10%;
+		margin-right: 10%;
+		
+		}
+article	{text-align: right;
+		
+		font-size: 20px;
+		margin-left: 10%;
+		margin-right: 10%;
+		border: 24px dashed gold;
+		background-color: gold;
+		box-shadow: 5px 6px #000000;
+		}

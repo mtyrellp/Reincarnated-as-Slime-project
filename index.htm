@@ -5,37 +5,46 @@
 		<meta name="Slime Home" content="Reincarnated as slime">
 		<title>Slime Homepage </title>
 		<script src="modernizr.custom.05819.js"></script>
-		
+		<link rel="stylesheet" href="anime.css">
+		<style type="text/css">
+		</style>
 	</head>
 	
-	<body style="text-align:center">
-	<img src="Slime logo.png" alt = "logo" style="float:right;width:250px;height:250px;">
+	<body>
+	
 	<!-- Place holder for image of logo -->
-		<nav>
-			<ul style="list-style-type:none;" >
-				<li>
-					<a href ="index.htm#anchor">Home</a>
-				</li>
-				<li>
-					<a href ="Rimuru.htm#anchor">Rimuru</a>
-				</li>
-				<li>
-					<a href ="Ogre Mages.htm#anchor">Ogre Mages</a>
-				</li>
-				<li>
-					<a href ="Dire wolves and Goblins.htm#anchor">Goblins and Direwolves</a>
-				</li>
-			</ul>
-		</nav>
-	<img src="Rimuru.png""Rimuru_Slime_Anime.png" class="center">
+		
+		<ul>
+			<li>
+				<a href ="index.htm#anchor">Home</a>
+			</li>
+			<li>
+				<a href ="Rimuru.htm#anchor">Rimuru</a>
+			</li>
+			<li>
+				<a href ="Ogre Mages.htm#anchor">Ogre Mages</a>
+			</li>
+			<li>
+				<a href ="Dire wolves and Goblins.htm#anchor">Goblins and Direwolves</a>
+			</li>
+		</ul>
+	<img src="Slime logo.png" alt = "logo" style="float:right;width:250px;height:250px;">	
+	
 	
 	<p>
+		<img src="Rimuru.png""Rimuru_Slime_Anime.png" style="float:left;">
 		Reincarnated as slime is anime about man who died when he was stabbed
 		on the street. Immediatly after he is reincartned into another world
 		but born as a slime. Known as one of the weakest monsters in any world
 		Rimuru strives to create a town where monsters and humans can live together
 		in harmony ..... but hits a few bumps along the way.
-	</p>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br><br>
+	
 	
 	 <article>
       <h2>Add Population</h2>
@@ -49,6 +58,7 @@
          <input type="submit" id="submit" value="Submit" />
       </form>
 	</article>
+	
 <script> 
 function calcTotal() {
  	var popTotal = 0;
@@ -59,15 +69,29 @@ function calcTotal() {
  	(item1.checked) ? (popTotal += 200) : (popTotal += 0);
  	(item2.checked) ? (popTotal += 400) : (popTotal += 0);
 	(item3.checked) ? (popTotal += 6) : (popTotal += 0);
-	var Total = popTotal
- 	alert("Total Population : " +Total);
-}
+	var Total = popTotal;
+	
+	try {
+		if (popTotal == 6) {
+			addlert("Total Population : " + Total + " Your town is so small");
+		} else if (popTotal >= 200 && popTotal < 400 ) {
+			alert("Total Population : " + Total + " What a nice size town");
+		}else if (popTotal >= 400) {
+			alert("Total Population : " + Total + " The size of your town is getting big");
+		}
+		}
+	catch (error) {
+		window.alert(error);
+	
+ 	
+		}
+		}
 document.getElementById("submit").addEventListener("click", calcTotal, false);
 
 </script>
 	
 	
-	
+	</p>
 	</body>
 
 
